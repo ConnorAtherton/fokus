@@ -1,0 +1,24 @@
+{
+  "name": "fokus",
+  "version": "1.0.0",
+  "description": "A small tool to block websites using your hosts file.",
+  "main": "src/fokus.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "fokus": "bin/fokus.js"
+  },
+  "keywords": [
+    "distraction",
+    "focus",
+    "work"
+  ],
+  "author": "Connor Atherton",
+  "license": "MIT",
+  "dependencies": {
+    "headway": "^0.1.0",
+    "minimist": "^1.1.0",
+    "split": "^0.3.2"
+  }
+}
