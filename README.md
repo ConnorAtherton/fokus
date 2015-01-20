@@ -30,7 +30,9 @@ sudo fokus -u /path/to/file --no-defaults
 
 ## Stop distractions
 
-# TODO still a work in progress
+To restore your /etc/hosts back to its original state run the following
+command. All traces of fokus will be gone.
+
 ```
 sudo fokus --kill
 ```
