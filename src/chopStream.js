@@ -2,7 +2,7 @@ var Transform = require('stream').Transform;
 var util = require('util');
 
 function ChopStream() {
-  this._buff;
+  this._buff = undefined;
   this._deleting = false;
 
   Transform.call(this);
@@ -23,7 +23,7 @@ ChopStream.prototype._transform = function(chunk, encoding, done) {
   }
 
   done();
-}
+};
 
 ChopStream.prototype._flush = function(done) {
   done();
