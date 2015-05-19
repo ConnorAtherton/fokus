@@ -41,7 +41,7 @@ You have to use sudo to modify /etc/hosts. I mainly use this
 myself, but if you want to use it check out the source beforehand
 so you understand what it does.
 
-Note: You might have to clear you DNS cache.
+Note: You might have to clear your DNS cache.
 
 ```
 sudo dscacheutil -flushcache
