@@ -43,18 +43,18 @@ function createString() {
   // a file has been specified..
   if (options.using || options.u) {
     var path = options.using || options.u;
-    path = (path[0] === "/" || path[0] === ".") ? path : "/" + path;
-    file = require(process.cwd() + path);
+    log("Using custom file - " + path);
+    file = require(path);
   }
 
-  if (!options.no || options.defaults === false) {
+  if (options.defaults !== false) {
     log("Adding the set of default link to hosts");
     defaults = require('./defaults');
   } else {
     log("Not including default links.");
   }
 
-  var allLinks = file.concat(defaults);
+  var allLinks = file.concat(defaults || []);
   for (var i = 0, l = allLinks.length; i < l; i ++) {
     strings.prepend += '127.0.0.1\t\t' + allLinks[i] + "\n";
   }
