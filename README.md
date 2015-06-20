@@ -1,3 +1,9 @@
+# Fokus
+
+A node tool to help you focus.
+
+![Example usage](/fokus.png)
+
 ## Add distractions
 
 A small set of defaults come bundled with fokus. Here is the simplest
