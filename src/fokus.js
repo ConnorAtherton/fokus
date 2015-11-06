@@ -63,7 +63,7 @@ function createString() {
 }
 
 /**
- * Removes all additions amde by fokus
+ * Removes all additions made by fokus
  * from /etc/hosts
  */
 function removeFromHosts() {
@@ -77,7 +77,7 @@ function removeFromHosts() {
     .pipe(write);
 
   fs.unlink(hosts, function(err) {
-    if (err) hw.log('error writing back to the hosts file');
+    if (err) hw.log('Error writing back to the hosts file');
 
     fs.renameSync(tmp, hosts);
   });
